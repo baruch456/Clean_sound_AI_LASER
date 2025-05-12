@@ -2,13 +2,23 @@
 
 This project aims to clean sound recordings from noisy environments using a Convolutional Neural Network (CNN) based on the CleanUNet model. The application is built using Python and PyQt5 for the graphical user interface (GUI), and it employs the `torchaudio` library for audio processing.
 
+## Abstract
+![Gui](images/Gui_example.png)
+
+Recording sound in a noisy environment poses many challenges when the desired audio signal (such as speech, music, or other sounds of interest) is masked or distorted by the presence of unwanted noise. This noise can come from various sources such as machinery, traffic, air conditioning systems, people talking, or other environmental sounds.
+We built an optical microphone based on a green laser that picks up sound signals from the environment by continuously photographing the laser reflection from a talking person and performing a correlation between the images. We measured changes in the laser light and, using MATLAB, we converted it to audio signals. This technology offers several advantages over normal microphones. With the help of Artificial Intelligence, we built a filter to improve the sound of speech in a loud, noisy environment. The dynamic range of the optical microphone is usually extended up to 1 kHz due to imaging limitations.
+In our project, the method involves self-collection of a database and using it with a developed algorithm to identify and improve the sound. Our final product is a GUI application that contains the learned deep learning model, which receives a noisy sound as input and returns the clean sound.
+
+Setup:
+![Gui](images/setup.png)
+
 ## Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [How It Works](#how-it-works)
+- [How It Works](#how-its-works)
 - [Dependencies](#dependencies)
 - [Credits](#credits)
 - [License](#license)
